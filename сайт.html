@@ -1,87 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-визитка</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            background-image: url('images/фото 2.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white; 
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.9); 
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
-        p {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #808080;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #AD49E1;
-        }
-        .navbar {
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            text-align: center;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 30px; 
-            font-size: 1.1em;
-        }
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Подключение CSS файла -->
 </head>
 <body>
     <div class="navbar">
-        <a href="#about">Обо мне</a>
+        <a href="#about">Мои достижения</a>
         <a href="#services">Услуги</a>
         <a href="#portfolio">Портфолио</a>
         <a href="#testimonials">Отзывы</a>
         <a href="#blog">Прайс</a>
         <a href="#contact">Контакты</a>
     </div>
-    <div>
-        <h1>Твой личный стилист</h1>
-        <h2>Создаю модные образы</h2>
-        <p>С более чем 5-летним опытом, помогу раскрыть ваш стиль.</p>
+    <div class="hero">
+        <h1>Фотограф</h1>
+        <h2>Потеснова Ксения</h2>
+        <p>С более чем 5-летним опытом, помогу раскрыть вашу красоту.</p>
         <a href="https://vk.com/21ksusha" class="cta-button">Связаться со мной</a>
     </div>
+
+    <!-- Секция "Мои достижения" -->
+    <div class="achievements" id="about">
+        <h4>Мои достижения</h4>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <img src="D:/3 курс/1 сем/ВД/6 лаба сайт/слайд/фото 1.jpg" alt="Достижение 1">
+                <h3>Васильева Дарья</h3>
+                <p>Свадебная фотосессия. На данной фотосессии невеста готовилась к торжественному событию. Она примеряла прекрасное платье, позировала с подругами, которые поддерживали её и делились радостью. </p>
+                <button class="cta-button">Подробнее</button>
+            </div>
+            <div class="achievement-card">
+                <img src="D:/3 курс/1 сем/ВД/6 лаба сайт/слайд/фото 2.jpg" alt="Достижение 2">
+                <h3>Агеявич Виктория</h3>
+                <p>Индивидуальная фотосессия. Фотосессия проходила в живописном парке в осенний солнечный день. Яркие цвета природы, улыбка девушки и теплый свет создали идеальные условия для съемки. </p>
+                <button class="cta-button">Подробнее</button>
+            </div>
+            <div class="achievement-card">
+                <img src="D:/3 курс/1 сем/ВД/6 лаба сайт/слайд/фото 4.jpg" alt="Достижение 3">
+                <h3>Глебко Дарья</h3>
+                <p>Индивидуальная фотосессия. Эта фотосессия проходила на живописном берегу озера, где спокойная вода отражала красоту окружающей природы. Наша модель была в великолепной атласной юбке.</p>
+                <button class="cta-button">Подробнее</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Другие секции -->
 </body>
 </html>
